@@ -35,7 +35,7 @@ const Model = () => {
   useEffect(() => {
     if(size === 'large') {
       animateWithGsapTimeline(tl, small, smallRotation, '#view1', '#view2', {
-        transform: 'translateX(-100%)',
+        transform: 'translateX(-200%)',
         duration: 2
       })
     }
@@ -60,7 +60,7 @@ const Model = () => {
         </h1>
 
         <div className="flex flex-col items-center mt-5">
-          <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
+          <div className="md:w-[50%] w-[72%] h-[75vh] md:h-[90vh] overflow-hidden relative">
             <ModelView 
               index={1}
               groupRef={small}
